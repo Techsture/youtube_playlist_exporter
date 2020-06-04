@@ -14,7 +14,7 @@ def main():
   with open('exported_youtube_playlist.html', 'w') as file:
     file.write(f"<html><body>")
     for video in playlist_items_by_playlist.items:
-      file.write(f"<a href=\"https://www.youtube.com/watch?v={video.snippet.resourceId.videoId}\">https://www.youtube.com/watch?v={video.snippet.resourceId.videoId}</a><br>")
+      file.write(f"<a href=\"https://www.youtube.com/watch?v={video.snippet.resourceId.videoId}\" target=\"_blank\">https://www.youtube.com/watch?v={video.snippet.resourceId.videoId}</a><br>\n")
     file.write(f"</body></html>")
   exit()
 
